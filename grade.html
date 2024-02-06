@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+
+        <script>
+
+            let physics = parseInt(prompt("enter physics marks ="))
+            let chemistry = parseInt(prompt("enter chemistry marks ="))
+            let biology = parseInt(prompt("enter biology marks ="))
+            let maths = parseInt(prompt("enter maths marks ="))
+            let computer = parseInt(prompt("enter computer marks ="))
+
+            if (physics > 100 || chemistry > 100 || biology > 100 || maths > 100 || computer > 100) {
+                console.log("enter marks out of 100");
+            }
+            else {
+
+                avg = (physics + chemistry + biology + maths + computer) / 5
+                console.log("percentage =", avg);
+
+                let ans = (avg >= 90) ? "Grade-A" : (avg < 90 && avg >= 80) ? "Grade-B" : (avg < 80 && avg >= 70) ? "Grade-C" : (avg < 70 && avg >= 60) ? "Grade-D" : (avg < 60 && avg >= 50) ? "Grade-E" : (avg < 50 && avg >= 40) ? "Grade-F" : "Fail"
+                console.log(ans);
+            }
+
+
+
+        </script>
+    </body>
+
+</html>
